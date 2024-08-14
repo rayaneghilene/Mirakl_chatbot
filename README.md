@@ -1,11 +1,13 @@
  # <img src="/Images/Mirakl_logo.png" alt="Logo" style="vertical-align: middle; height: 1em; margin-right: 10px;" /> Mirakl Data Scraper and Vector Database Query
 This project is a Python-based tool that scrapes data from the Mirakl website, processes it, and stores it in a JSON file, which is later loaded into vector database for efficient querying. It uses the Sentence Transformers library for text embeddings and ChromaDB for vector storage and retrieval.
 
+
 ## Pipeline
 
 <p align="center">
   <img src="https://github.com/rayaneghilene/Mirakl_chatbot/blob/main/Images/Pipeline.png" alt="Pipeline" />
 </p>
+
 
 ## Features
 
@@ -21,13 +23,6 @@ Before running the script, ensure you have the following installed:
 
 - Python 3.10 or higher
 - Pip (Python package installer)
-
-
-## UI Overview
-
-<p align="center">
-  <img src="https://github.com/rayaneghilene/Mirakl_chatbot/blob/main/Images/UI.png" alt="UI" />
-</p>
 
 
 ## Installation
@@ -56,6 +51,8 @@ Before running the script, ensure you have the following installed:
     ```
 
     You can also load a different model from the ollama library. Check out the available models [here]( https://ollama.com/library)
+
+
 ## Usage
 
 The ```scrape_website.py``` script will scrape data from a website and save it to a JSON file.
@@ -86,6 +83,13 @@ The ```scrape_website.py``` script will scrape data from a website and save it t
     streamlit run app.py
     ```
     This will open a new window in your browser, and you'll be able to chat with the model ☺️.
+
+
+## UI Overview
+
+<p align="center">
+  <img src="https://github.com/rayaneghilene/Mirakl_chatbot/blob/main/Images/UI.png" alt="UI" />
+</p>
 
 
 ## References
