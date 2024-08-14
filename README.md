@@ -14,11 +14,6 @@ This project is a Python-based tool that scrapes data from the Mirakl website, p
 - **Database Management**: Interacts with ChromaDB to manage collections and store vectors.
 - **Querying**: Retrieves relevant information from the vector database based on a query.
 
-## UI Overview
-
-<p align="center">
-  <img src="https://github.com/rayaneghilene/Mirakl_chatbot/blob/main/Images/UI.png" alt="UI" />
-</p>
 
 ## Prerequisites
 
@@ -26,6 +21,14 @@ Before running the script, ensure you have the following installed:
 
 - Python 3.10 or higher
 - Pip (Python package installer)
+
+
+## UI Overview
+
+<p align="center">
+  <img src="https://github.com/rayaneghilene/Mirakl_chatbot/blob/main/Images/UI.png" alt="UI" />
+</p>
+
 
 ## Installation
 

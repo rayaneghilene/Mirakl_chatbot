@@ -1,5 +1,7 @@
 from sentence_transformers import SentenceTransformer
 import chromadb
+from chromadb.config import DEFAULT_TENANT, DEFAULT_DATABASE, Settings
+
 from chromadb import Client
 import argparse
 from urllib.parse import urljoin, urlparse
@@ -44,9 +46,10 @@ def get_or_create_collection(client, collection_name):
 def query_collection(collection, query_text, top_k=1):
     query_vector = vectorize_text(query_text)
     results = collection.query(
-        query_embeddings=[query_vector]
+        query_embeddings=[query_vector], 
+        # n_results=top_k
     )
-    
+    # print("results", results)
     ids = results['ids'][0]
     distances = results['distances'][0]
     metadatas = results['metadatas'][0]
@@ -107,16 +110,17 @@ def main():
     data = load_json(json_file_path)
 
 
-    client = Client()
+    # client = Client()
+    client = chromadb.Client(Settings(is_persistent=True,persist_directory= "/Users/rayaneghilene/Documents/Ollama/Mirakl_chatbot/data",))
 
-    delete_collection(client, collection_name)
+    # delete_collection(client, collection_name)
     
     collection = get_or_create_collection(client, collection_name)
     add_paragraphs_to_collection(collection, data)
 
 
     results = query_collection(collection, query_text)
-
+    print("results", results)
     print("Query Results:")
     for i in range(len(results['ids'])):
         print(f"Query: {query_text}")

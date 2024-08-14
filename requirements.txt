@@ -1,3 +1,6 @@
 sentence-transformers==2.7.0
 chromadb==0.5.5
 bs4==0.0.2
+streamlit==1.33.0
+langchain==0.1.16
+ollama==0.1.8
