@@ -1,11 +1,11 @@
- # <img src="/Images/Mirakl_logo.png" alt="Logo" style="vertical-align: middle; height: 1em; margin-right: 10px;" /> Mirakl Data Scraper and Vector Database Query
+# Website Data Scraper and Vector Database Query
 This project is a Python-based tool that scrapes data from the Mirakl website, processes it, and stores it in a JSON file, which is later loaded into vector database for efficient querying. It uses the Sentence Transformers library for text embeddings and ChromaDB for vector storage and retrieval.
 
 
 ## Pipeline
 
 <p align="center">
-  <img src="https://github.com/rayaneghilene/Mirakl_chatbot/blob/main/Images/Pipeline.png" alt="Pipeline" />
+  <img src="https://github.com/rayaneghilene/Website_scrapper_rag/blob/main/Images/Pipeline.png" alt="Pipeline" />
 </p>
 
 
